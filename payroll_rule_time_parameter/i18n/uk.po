@@ -17,3 +17,8 @@ msgstr ""
 #: model:ir.ui.menu,name:payroll_rule_time_parameter.menu_action_base_time_parameter
 msgid "Time Parameters"
 msgstr "Параметри часу"
+
+#. module: payroll_rule_time_parameter
+#: model:ir.actions.act_window,name:payroll_rule_time_parameter.base_time_parameter_action
+msgid "Rule Parameters"
+msgstr "Параметри правила"

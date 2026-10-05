@@ -76,3 +76,73 @@ msgstr "Керування нарахуванням зарплати"
 #: model_terms:ir.ui.view,arch_db:hr_payroll_document.view_payroll_filter
 msgid "Subject"
 msgstr "Тема"
+
+#. module: hr_payroll_document
+#: model:ir.model.fields,field_description:hr_payroll_document.field_ir_attachment_payroll_custom__attachment_id
+msgid "Attachment File"
+msgstr "Файл вкладення"
+
+#. module: hr_payroll_document
+#: model_terms:ir.ui.view,arch_db:hr_payroll_document.payrolls_management_wizard_form
+msgid "Close"
+msgstr "Закрити"
+
+#. module: hr_payroll_document
+#: model_terms:ir.ui.view,arch_db:hr_payroll_document.res_users_view_form_profile_inherit
+#: model_terms:ir.ui.view,arch_db:hr_payroll_document.view_employee_form
+msgid "Disable encryption"
+msgstr "Вимкнути шифрування"
+
+#. module: hr_payroll_document
+#: model:ir.model.fields,field_description:hr_payroll_document.field_hr_employee__no_payroll_encryption
+#: model:ir.model.fields,field_description:hr_payroll_document.field_res_users__no_payroll_encryption
+msgid "Disable payrolls encryption"
+msgstr "Вимкнути шифрування розрахунку зарплати"
+
+#. module: hr_payroll_document
+#: model:ir.model.fields,field_description:hr_payroll_document.field_ir_attachment__document_type
+#: model:ir.model.fields,field_description:hr_payroll_document.field_product_document__document_type
+msgid "Document Type"
+msgstr "Тип документа"
+
+#. module: hr_payroll_document
+#: model_terms:ir.ui.view,arch_db:hr_payroll_document.view_payroll_filter
+msgid "Group By"
+msgstr "Групувати за"
+
+#. module: hr_payroll_document
+#: model:ir.model.fields,field_description:hr_payroll_document.field_ir_attachment_payroll_custom__identification_id
+#: model_terms:ir.ui.view,arch_db:hr_payroll_document.view_payroll_filter
+msgid "Identification ID"
+msgstr "Ідентифікаційний ID"
+
+#. module: hr_payroll_document
+#: model:ir.model.fields,field_description:hr_payroll_document.field_ir_attachment_payroll_custom__write_uid
+#: model:ir.model.fields,field_description:hr_payroll_document.field_payroll_management_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Останнє оновлення ким"
+
+#. module: hr_payroll_document
+#: model:ir.model.fields,field_description:hr_payroll_document.field_ir_attachment_payroll_custom__write_date
+#: model:ir.model.fields,field_description:hr_payroll_document.field_payroll_management_wizard__write_date
+msgid "Last Updated on"
+msgstr "Останнє оновлення"
+
+#. module: hr_payroll_document
+#. odoo-python
+#: code:addons/hr_payroll_document/wizard/payroll_management_wizard.py:0
+#: model:ir.model.fields.selection,name:hr_payroll_document.selection__ir_attachment__document_type__payroll
+#: model_terms:ir.ui.view,arch_db:hr_payroll_document.res_users_view_form_profile_inherit
+#: model_terms:ir.ui.view,arch_db:hr_payroll_document.view_employee_form
+msgid "Payroll"
+msgstr "Розрахунок заробітної плати"
+
+#. module: hr_payroll_document
+#: model:ir.model.fields,field_description:hr_payroll_document.field_hr_employee__payroll_count
+msgid "Payroll Count"
+msgstr "Кількість нарахувань зарплати"
+
+#. module: hr_payroll_document
+#: model_terms:ir.ui.view,arch_db:hr_payroll_document.payrolls_management_wizard_form
+msgid "Send"
+msgstr "Надіслати"

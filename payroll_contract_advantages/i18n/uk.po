@@ -69,3 +69,31 @@ msgstr "Назва"
 #: model:ir.model.fields,field_description:payroll_contract_advantages.field_hr_contract_advantage_template__upper_bound
 msgid "Upper Bound"
 msgstr "Верхня межа"
+
+#. module: payroll_contract_advantages
+#: model_terms:ir.ui.view,arch_db:payroll_contract_advantages.hr_contract_advantage_template_view_form
+msgid "Advantage Name"
+msgstr "Назва переваги"
+
+#. module: payroll_contract_advantages
+#: model:ir.model.fields,field_description:payroll_contract_advantages.field_hr_contract__advantages_ids
+#: model_terms:ir.ui.view,arch_db:payroll_contract_advantages.advantages_hr_contract_view_form
+msgid "Contract Advantages"
+msgstr "Переваги договору"
+
+#. module: payroll_contract_advantages
+#: model:ir.model.fields,field_description:payroll_contract_advantages.field_hr_contract_advantage_template__default_value
+msgid "Default Value"
+msgstr "Типове значення"
+
+#. module: payroll_contract_advantages
+#: model:ir.model.fields,field_description:payroll_contract_advantages.field_hr_contract_advantage__write_uid
+#: model:ir.model.fields,field_description:payroll_contract_advantages.field_hr_contract_advantage_template__write_uid
+msgid "Last Updated by"
+msgstr "Останнє оновлення ким"
+
+#. module: payroll_contract_advantages
+#: model:ir.model.fields,field_description:payroll_contract_advantages.field_hr_contract_advantage__write_date
+#: model:ir.model.fields,field_description:payroll_contract_advantages.field_hr_contract_advantage_template__write_date
+msgid "Last Updated on"
+msgstr "Останнє оновлення"

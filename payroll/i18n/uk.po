@@ -353,7 +353,7 @@ msgstr "Дія"
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip__message_needaction
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip_run__message_needaction
 msgid "Action Needed"
-msgstr ""
+msgstr "Потрібна дія"
 
 #. module: payroll
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip_line__active
@@ -371,19 +371,19 @@ msgstr "Дії"
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip__activity_exception_decoration
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip_run__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr ""
+msgstr "Оформлення винятку дії"
 
 #. module: payroll
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip__activity_state
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip_run__activity_state
 msgid "Activity State"
-msgstr ""
+msgstr "Стан дії"
 
 #. module: payroll
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip__activity_type_icon
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip_run__activity_type_icon
 msgid "Activity Type Icon"
-msgstr ""
+msgstr "Піктограма типу дії"
 
 #. module: payroll
 #: model_terms:ir.actions.act_window,help:payroll.hr_contribution_register_action
@@ -414,18 +414,18 @@ msgstr ""
 #: model:ir.model.fields,field_description:payroll.field_res_config_settings__allow_cancel_payslips
 #: model_terms:ir.ui.view,arch_db:payroll.res_config_settings_view_form
 msgid "Allow canceling confirmed payslips"
-msgstr ""
+msgstr "Дозволити скасування підтверджених розрахункових листів"
 
 #. module: payroll
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip_line__allow_edit_payslip_lines
 msgid "Allow editing"
-msgstr ""
+msgstr "Дозволити редагування"
 
 #. module: payroll
 #: model:ir.model.fields,field_description:payroll.field_res_config_settings__allow_edit_payslip_lines
 #: model_terms:ir.ui.view,arch_db:payroll.res_config_settings_view_form
 msgid "Allow editing payslip lines"
-msgstr ""
+msgstr "Дозволити редагування рядків розрахункового листа"
 
 #. module: payroll
 #: model_terms:ir.ui.view,arch_db:payroll.res_config_settings_view_form
@@ -442,6 +442,8 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:payroll.res_config_settings_view_form
 msgid "Allow users to edit some payslip line fields manually"
 msgstr ""
+"Дозволити користувачам вручну редагувати деякі поля рядків розрахункового "
+"листа"
 
 #. module: payroll
 #: model:hr.salary.rule.category,name:payroll.ALW
@@ -466,7 +468,7 @@ msgstr "Сума"
 #. module: payroll
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip_input__amount_qty
 msgid "Amount Quantity"
-msgstr ""
+msgstr "Кількість суми"
 
 #. module: payroll
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip_line__amount_select
@@ -505,7 +507,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip__message_attachment_count
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip_run__message_attachment_count
 msgid "Attachment Count"
-msgstr ""
+msgstr "Кількість вкладень"
 
 #. module: payroll
 #: model:hr.salary.rule.category,name:payroll.BASIC
@@ -572,7 +574,7 @@ msgstr "Категорія"
 #: model:ir.actions.act_window,name:payroll.action_hr_payslip_change_state_form
 #: model_terms:ir.ui.view,arch_db:payroll.hr_payslip_change_state_form
 msgid "Change state"
-msgstr ""
+msgstr "Змінити стан"
 
 #. module: payroll
 #: model:ir.model,name:payroll.model_hr_payslip_change_state
@@ -676,7 +678,7 @@ msgstr "Розрахунок"
 #. module: payroll
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip__compute_date
 msgid "Compute Date"
-msgstr ""
+msgstr "Дата обчислення"
 
 #. module: payroll
 #: model:ir.model.fields.selection,name:payroll.selection__hr_payslip_change_state__state__verify
@@ -693,7 +695,7 @@ msgstr "Умова базується на"
 #. module: payroll
 #: model_terms:ir.ui.view,arch_db:payroll.hr_salary_rule_view_form
 msgid "Condition Range"
-msgstr ""
+msgstr "Діапазон умови"
 
 #. module: payroll
 #: model_terms:ir.ui.view,arch_db:payroll.hr_salary_rule_view_form
@@ -720,7 +722,7 @@ msgstr "Підтвердити"
 #: model:ir.model.fields,field_description:payroll.field_res_config_settings__prevent_compute_on_confirm
 #: model_terms:ir.ui.view,arch_db:payroll.res_config_settings_view_form
 msgid "Confirm payslips without recomputing"
-msgstr ""
+msgstr "Підтверджувати розрахункові листи без перерахунку"
 
 #. module: payroll
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip__contract_id
@@ -856,7 +858,7 @@ msgstr "Дедукція"
 #: model:ir.model.fields,field_description:payroll.field_res_config_settings__payroll_structure_id
 #: model_terms:ir.ui.view,arch_db:payroll.res_config_settings_view_form
 msgid "Default Salary Structure"
-msgstr ""
+msgstr "Типова структура зарплати"
 
 #. module: payroll
 #: model:ir.model.fields,help:payroll.field_hr_contract__schedule_pay
@@ -1022,7 +1024,7 @@ msgstr "Приклади"
 #. module: payroll
 #: model_terms:ir.ui.view,arch_db:payroll.hr_payslip_change_state_form
 msgid "Execute"
-msgstr ""
+msgstr "Виконати"
 
 #. module: payroll
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip_line__amount_fix
@@ -1042,7 +1044,7 @@ msgstr "Підписники"
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip__message_partner_ids
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip_run__message_partner_ids
 msgid "Followers (Partners)"
-msgstr ""
+msgstr "Підписники (контрагенти)"
 
 #. module: payroll
 #: model:ir.model.fields,help:payroll.field_hr_payslip__activity_type_icon
@@ -1118,17 +1120,17 @@ msgstr "Має повідомлення"
 #. module: payroll
 #: model_terms:ir.ui.view,arch_db:payroll.hr_salary_rule_view_form
 msgid "Help"
-msgstr ""
+msgstr "Довідка"
 
 #. module: payroll
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip__hide_child_lines
 msgid "Hide Child Lines"
-msgstr ""
+msgstr "Приховати дочірні рядки"
 
 #. module: payroll
 #: model_terms:ir.ui.view,arch_db:payroll.hr_payslip_view_form
 msgid "Hours"
-msgstr ""
+msgstr "Години"
 
 #. module: payroll
 #: model:hr.salary.rule,name:payroll.hr_salary_rule_houserentallowance1
@@ -1207,6 +1209,8 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:payroll.res_config_settings_view_form
 msgid "In payslip worked days, leave days/hours have positive values"
 msgstr ""
+"У відпрацьованих днях розрахункового листа дні/години відпустки мають "
+"додатні значення"
 
 #. module: payroll
 #: model_terms:ir.ui.view,arch_db:payroll.hr_salary_rule_view_form
@@ -1309,7 +1313,7 @@ msgstr "Останнє оновлення"
 #: model:ir.model.fields,field_description:payroll.field_res_config_settings__leaves_positive
 #: model_terms:ir.ui.view,arch_db:payroll.res_config_settings_view_form
 msgid "Leaves with positive values"
-msgstr ""
+msgstr "Відпустки з додатними значеннями"
 
 #. module: payroll
 #: model:ir.model.fields,help:payroll.field_hr_salary_rule_category__parent_id
@@ -1350,7 +1354,7 @@ msgstr "Ваучер на їжу"
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip__message_has_error
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip_run__message_has_error
 msgid "Message Delivery error"
-msgstr ""
+msgstr "Помилка доставки повідомлення"
 
 #. module: payroll
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip__message_ids
@@ -1378,7 +1382,7 @@ msgstr "Щомісячно"
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip__my_activity_date_deadline
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip_run__my_activity_date_deadline
 msgid "My Activity Deadline"
-msgstr ""
+msgstr "Кінцевий термін моєї дії"
 
 #. module: payroll
 #: model:ir.model.fields,field_description:payroll.field_hr_contribution_register__name
@@ -1407,25 +1411,25 @@ msgstr "Чиста зарплата"
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip__activity_calendar_event_id
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip_run__activity_calendar_event_id
 msgid "Next Activity Calendar Event"
-msgstr ""
+msgstr "Подія календаря наступної дії"
 
 #. module: payroll
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip__activity_date_deadline
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip_run__activity_date_deadline
 msgid "Next Activity Deadline"
-msgstr ""
+msgstr "Кінцевий термін наступної дії"
 
 #. module: payroll
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip__activity_summary
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip_run__activity_summary
 msgid "Next Activity Summary"
-msgstr ""
+msgstr "Підсумок наступної дії"
 
 #. module: payroll
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip__activity_type_id
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip_run__activity_type_id
 msgid "Next Activity Type"
-msgstr ""
+msgstr "Тип наступної дії"
 
 #. module: payroll
 #. odoo-python
@@ -1443,7 +1447,7 @@ msgstr "Примітки"
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip__message_needaction_counter
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip_run__message_needaction_counter
 msgid "Number of Actions"
-msgstr ""
+msgstr "Кількість дій"
 
 #. module: payroll
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip_worked_days__number_of_days
@@ -1459,7 +1463,7 @@ msgstr "Кількість годин"
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip__message_has_error_counter
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip_run__message_has_error_counter
 msgid "Number of errors"
-msgstr ""
+msgstr "Кількість помилок"
 
 #. module: payroll
 #: model:ir.model.fields,help:payroll.field_hr_payslip__message_needaction_counter
@@ -1612,7 +1616,7 @@ msgstr ""
 #. module: payroll
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip_line__payslip_run_id
 msgid "Payslip Batch"
-msgstr ""
+msgstr "Пакет розрахункових листків"
 
 #. module: payroll
 #: model:ir.model,name:payroll.model_hr_payslip_run
@@ -1723,7 +1727,7 @@ msgstr "Розрахункові листи співробітника"
 #. module: payroll
 #: model_terms:ir.ui.view,arch_db:payroll.hr_payslip_view_search
 msgid "Pending Review"
-msgstr ""
+msgstr "Очікує перевірки"
 
 #. module: payroll
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip_line__amount_percentage
@@ -1759,7 +1763,7 @@ msgstr ""
 #: model:ir.model.fields,help:payroll.field_res_config_settings__prevent_compute_on_confirm
 #: model_terms:ir.ui.view,arch_db:payroll.res_config_settings_view_form
 msgid "Prevent payslips from being recomputed when confirming them"
-msgstr ""
+msgstr "Не перераховувати розрахункові листи під час їх підтвердження"
 
 #. module: payroll
 #: model_terms:ir.ui.view,arch_db:payroll.view_payslip_lines_contribution_register
@@ -1872,7 +1876,7 @@ msgstr ""
 #. module: payroll
 #: model_terms:ir.ui.view,arch_db:payroll.hr_payslip_view_search
 msgid "Refunded"
-msgstr ""
+msgstr "Повернено кошти"
 
 #. module: payroll
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip__refunded_id
@@ -1899,25 +1903,25 @@ msgstr "Потрібен код"
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip_line__require_code_and_category
 #: model:ir.model.fields,field_description:payroll.field_hr_salary_rule__require_code_and_category
 msgid "Require code and category"
-msgstr ""
+msgstr "Вимагати код і категорію"
 
 #. module: payroll
 #: model:ir.model.fields,field_description:payroll.field_res_config_settings__require_code_and_category
 #: model_terms:ir.ui.view,arch_db:payroll.res_config_settings_view_form
 msgid "Require code/category on rules, categories and structures"
-msgstr ""
+msgstr "Вимагати код/категорію в правилах, категоріях і структурах"
 
 #. module: payroll
 #: model:ir.model.fields,help:payroll.field_res_config_settings__require_code_and_category
 #: model_terms:ir.ui.view,arch_db:payroll.res_config_settings_view_form
 msgid "Require rule.code, rule.category, category.code, structure.code"
-msgstr ""
+msgstr "Вимагати rule.code, rule.category, category.code, structure.code"
 
 #. module: payroll
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip__activity_user_id
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip_run__activity_user_id
 msgid "Responsible User"
-msgstr ""
+msgstr "Відповідальний користувач"
 
 #. module: payroll
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip_line__salary_rule_id
@@ -2238,7 +2242,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip__website_message_ids
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip_run__website_message_ids
 msgid "Website Messages"
-msgstr ""
+msgstr "Повідомлення вебсайту"
 
 #. module: payroll
 #: model:ir.model.fields,help:payroll.field_hr_payslip__website_message_ids
@@ -2327,7 +2331,7 @@ msgstr "Ви повинні встановити контракт, щоб ств
 #. module: payroll
 #: model_terms:ir.ui.view,arch_db:payroll.hr_payslip_view_form
 msgid "period"
-msgstr ""
+msgstr "період"
 
 #. module: payroll
 #: model:ir.model.fields,help:payroll.field_hr_payslip_line__amount_percentage_base

@@ -183,3 +183,42 @@ msgstr "Вкладення до розрахунку зарплати"
 #: model:mail.template,subject:hr_payroll_document.payroll_employee_email_template
 msgid "Payroll {{ctx.get('subject')}}"
 msgstr "Розрахунок зарплати {{ctx.get('subject')}}"
+
+#. module: hr_payroll_document
+#. odoo-python
+#: code:addons/hr_payroll_document/tests/test_hr_payroll_document.py:0
+#: code:addons/hr_payroll_document/wizard/payroll_management_wizard.py:0
+msgid "Employees not found"
+msgstr "Працівників не знайдено"
+
+#. module: hr_payroll_document
+#. odoo-python
+#: code:addons/hr_payroll_document/wizard/payroll_management_wizard.py:0
+msgid "Missing pdf file signature"
+msgstr "Відсутній підпис PDF-файлу"
+
+#. module: hr_payroll_document
+#. odoo-python
+#: code:addons/hr_payroll_document/tests/test_hr_payroll_document.py:0
+#: code:addons/hr_payroll_document/wizard/payroll_management_wizard.py:0
+msgid "Payrolls sent"
+msgstr "Розрахункові листи надіслано"
+
+#. module: hr_payroll_document
+#. odoo-python
+#: code:addons/hr_payroll_document/tests/test_hr_payroll_document.py:0
+#: code:addons/hr_payroll_document/wizard/payroll_management_wizard.py:0
+msgid "Payrolls sent to employees correctly"
+msgstr "Розрахункові листи успішно надіслано працівникам"
+
+#. module: hr_payroll_document
+#. odoo-python
+#: code:addons/hr_payroll_document/models/hr_employee.py:0
+msgid "The field identification ID is not valid"
+msgstr "Поле ідентифікаційного ID недійсне"
+
+#. module: hr_payroll_document
+#. odoo-python
+#: code:addons/hr_payroll_document/wizard/payroll_management_wizard.py:0
+msgid "You must to filled country field of company"
+msgstr "Потрібно заповнити поле країни компанії"

@@ -1548,6 +1548,7 @@ msgstr "Керівник"
 msgid ""
 "Only draft payslips can be verified,the payslip %(nm)s is in %(st)s state"
 msgstr ""
+"Перевіряти можна лише розрахункові листи у чернетці; %(nm)s має стан %(st)s"
 
 #. module: payroll
 #. odoo-python
@@ -1556,6 +1557,8 @@ msgid ""
 "Only payslips in states verify or draft can be confirmed, the payslip %(nm)s"
 " is in %(st)s state"
 msgstr ""
+"Підтверджувати можна лише розрахункові листи у стані перевірки або чернетки;"
+" %(nm)s має стан %(st)s"
 
 #. module: payroll
 #. odoo-python
@@ -1564,6 +1567,8 @@ msgid ""
 "Only rejected payslips can be reset to draft, the payslip %(nm)s is in "
 "%(st)s state"
 msgstr ""
+"До чернетки можна повернути лише відхилені розрахункові листи; %(nm)s має "
+"стан %(st)s"
 
 #. module: payroll
 #: model_terms:ir.ui.view,arch_db:payroll.hr_payslip_view_form
@@ -1671,7 +1676,7 @@ msgstr "Розрахунковий лист"
 #. odoo-python
 #: code:addons/payroll/models/hr_payslip.py:0
 msgid "Payslip 'Date From' must be earlier than 'Date To'."
-msgstr ""
+msgstr "«Дата від» розрахункового листа має бути раніше «Дати до»."
 
 #. module: payroll
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip_line__payslip_run_id
@@ -1905,7 +1910,7 @@ msgstr "Ставка (%)"
 #. odoo-python
 #: code:addons/payroll/models/hr_payslip_line.py:0
 msgid "Recursion error. Only one line should be parent of %s"
-msgstr ""
+msgstr "Помилка рекурсії. Лише один рядок має бути батьківським для %s"
 
 #. module: payroll
 #: model:ir.model.fields,field_description:payroll.field_hr_payroll_structure__code
@@ -1927,13 +1932,13 @@ msgstr "Відшкодування"
 #. odoo-python
 #: code:addons/payroll/models/hr_payslip.py:0
 msgid "Refund Payslip"
-msgstr ""
+msgstr "Повернути розрахунковий лист"
 
 #. module: payroll
 #. odoo-python
 #: code:addons/payroll/models/hr_payslip.py:0
 msgid "Refund: %s"
-msgstr ""
+msgstr "Повернення: %s"
 
 #. module: payroll
 #: model_terms:ir.ui.view,arch_db:payroll.hr_payslip_view_search
@@ -1999,7 +2004,7 @@ msgstr "Налаштування правила"
 #. odoo-python
 #: code:addons/payroll/models/hr_salary_rule.py:0
 msgid "Rule computation field '%s' must be a float"
-msgstr ""
+msgstr "Поле обчислення правила «%s» має бути числом з плаваючою комою"
 
 #. module: payroll
 #: model_terms:ir.ui.view,arch_db:payroll.hr_salary_rule_category_view_form
@@ -2057,7 +2062,7 @@ msgstr "Визначення формули правил зарплати (Pytho
 #. odoo-python
 #: code:addons/payroll/models/hr_payslip.py:0
 msgid "Salary Slip of %(name)s for %(dt)s"
-msgstr ""
+msgstr "Розрахунковий лист %(name)s за %(dt)s"
 
 #. module: payroll
 #: model:ir.model,name:payroll.model_hr_payroll_structure
@@ -2103,6 +2108,8 @@ msgid ""
 "Selected structure differs from the default for this employee/company "
 "(expected: %s)."
 msgstr ""
+"Вибрана структура відрізняється від типової для цього працівника/компанії "
+"(очікується: %s)."
 
 #. module: payroll
 #: model:ir.model.fields.selection,name:payroll.selection__hr_contract__schedule_pay__semi-annually
@@ -2249,7 +2256,7 @@ msgstr "Мінімальне значення, що застосовується
 #. odoo-python
 #: code:addons/payroll/wizard/hr_payslip_change_state.py:0
 msgid "The payslip %(nm)s is already canceled please deselect it"
-msgstr ""
+msgstr "Розрахунковий лист %(nm)s уже скасовано, зніміть його вибір"
 
 #. module: payroll
 #: model:ir.model.fields,help:payroll.field_hr_payslip_line__condition_range
@@ -2270,6 +2277,8 @@ msgid ""
 "To cancel the Original Payslip the\n"
 "                        Refunded Payslip needs to be canceled first!"
 msgstr ""
+"Щоб скасувати початковий розрахунковий лист,\n"
+"спочатку потрібно скасувати повернений розрахунковий лист!"
 
 #. module: payroll
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip_line__total
@@ -2308,7 +2317,7 @@ msgstr "Очікування"
 #. odoo-python
 #: code:addons/payroll/models/hr_contract.py:0
 msgid "Warning: default salary structure"
-msgstr ""
+msgstr "Попередження: типова структура зарплати"
 
 #. module: payroll
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip__website_message_ids
@@ -2359,6 +2368,8 @@ msgid ""
 "Wrong percentage base or quantity defined for salary rule %(nm)s (%(code)s) "
 "for employee %(ee)s."
 msgstr ""
+"Неправильна відсоткова база або кількість у правилі зарплати %(nm)s "
+"(%(code)s) для працівника %(ee)s."
 
 #. module: payroll
 #. odoo-python
@@ -2367,6 +2378,8 @@ msgid ""
 "Wrong quantity defined for salary rule %(nm)s (%(code)s) for employee "
 "%(ee)s."
 msgstr ""
+"Неправильна кількість у правилі зарплати %(nm)s (%(code)s) для працівника "
+"%(ee)s."
 
 #. module: payroll
 #. odoo-python
@@ -2375,6 +2388,8 @@ msgid ""
 "Wrong range condition defined for salary rule %(nm)s (%(code)s) for employee"
 " %(ee)s."
 msgstr ""
+"Неправильно визначена умова діапазону для правила зарплати %(nm)s (%(code)s)"
+" працівника %(ee)s."
 
 #. module: payroll
 #. odoo-python
@@ -2387,6 +2402,7 @@ msgstr "Ви не можете створити рекурсивну струк�
 #: code:addons/payroll/models/hr_payslip.py:0
 msgid "You cannot delete a payslip which is not draft or cancelled"
 msgstr ""
+"Не можна видалити розрахунковий лист, який не є чернеткою або скасованим"
 
 #. module: payroll
 #. odoo-python

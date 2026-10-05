@@ -76,6 +76,13 @@ msgid ""
 "        \n"
 "* When user cancel payslip the status is 'Rejected'."
 msgstr ""
+"* Після створення розрахункового листка статус — 'Чернетка'\n"
+"        \n"
+"* Якщо розрахунковий листок перевіряється, статус — 'Очікує'.\n"
+"        \n"
+"* Якщо розрахунковий листок підтверджено, статус установлюється в 'Виконано'.\n"
+"        \n"
+"* Коли користувач скасовує розрахунковий листок, статус — 'Відхилено'."
 
 #. module: payroll
 #: model:ir.model.fields,help:payroll.field_hr_payslip_change_state__state
@@ -85,6 +92,10 @@ msgid ""
 "* If the payslip is confirmed then status is set to 'Done'.             \n"
 "* When user cancel payslip the status is 'Rejected'."
 msgstr ""
+"* Після створення розрахункового листка статус — 'Чернетка'.\n"
+"* Якщо розрахунковий листок перебуває на перевірці, статус — 'Розрахувати листок'.\n"
+"* Якщо розрахунковий листок підтверджено, статус установлюється в 'Виконано'.\n"
+"* Коли користувач скасовує розрахунковий листок, статус — 'Відхилено'."
 
 #. module: payroll
 #: model_terms:ir.ui.view,arch_db:payroll.hr_salary_rule_view_form
@@ -467,7 +478,7 @@ msgstr "Дозволити користувачам скасовувати пі�
 #. module: payroll
 #: model:ir.model.fields,help:payroll.field_res_config_settings__allow_cancel_payslips
 msgid "Allow users to cancel confirmed payslips."
-msgstr ""
+msgstr "Дозволити користувачам скасовувати підтверджені розрахункові листи."
 
 #. module: payroll
 #: model:ir.model.fields,help:payroll.field_res_config_settings__allow_edit_payslip_lines
@@ -611,7 +622,7 @@ msgstr "Змінити стан"
 #. module: payroll
 #: model:ir.model,name:payroll.model_hr_payslip_change_state
 msgid "Change state of a payslip"
-msgstr ""
+msgstr "Змінити стан розрахункового листа"
 
 #. module: payroll
 #: model_terms:ir.ui.view,arch_db:payroll.hr_payslip_line_view_form
@@ -912,6 +923,11 @@ msgid ""
 " on the structure of all contracts of the employee valid for the chosen "
 "period"
 msgstr ""
+"Визначає правила, які потрібно застосувати до цього пакета розрахункових "
+"листків відповідно до вибраного контракту. Якщо залишити поле контракту "
+"порожнім, це поле більше не є обов'язковим, а застосовуватимуться всі "
+"правила, установлені в структурі всіх контрактів працівника, чинних у "
+"вибраному періоді."
 
 #. module: payroll
 #: model:ir.model.fields,help:payroll.field_hr_payslip__struct_id
@@ -1296,7 +1312,7 @@ msgstr "Є причиною блокування?"
 #. module: payroll
 #: model:ir.model.fields,help:payroll.field_hr_payslip_input__amount_qty
 msgid "It can be used in computation for other inputs"
-msgstr ""
+msgstr "Може використовуватися в розрахунках інших входів"
 
 #. module: payroll
 #: model:ir.model.fields,help:payroll.field_hr_salary_rule__quantity
@@ -1376,7 +1392,7 @@ msgstr "Проведення розрахункового листа?"
 #. module: payroll
 #: model:ir.module.category,description:payroll.module_category_payroll
 msgid "Manage employee payroll"
-msgstr ""
+msgstr "Керування розрахунком зарплати працівників"
 
 #. module: payroll
 #: model:res.groups,name:payroll.group_payroll_manager
@@ -1743,6 +1759,8 @@ msgstr "Відпрацьовано днів"
 msgid ""
 "Payslip for {{object.payslip_run_id.name}} from {{object.company_id.name}}"
 msgstr ""
+"Розрахунковий лист {{object.payslip_run_id.name}} від "
+"{{object.company_id.name}}"
 
 #. module: payroll
 #. odoo-python
@@ -2099,7 +2117,7 @@ msgstr "Надіслати лист із розрахунковим листко
 #. module: payroll
 #: model:mail.template,name:payroll.mail_template_hr_payslip
 msgid "Send payslip by email"
-msgstr ""
+msgstr "Надіслати розрахунковий лист email"
 
 #. module: payroll
 #: model:ir.model.fields,field_description:payroll.field_hr_payslip_input__sequence
@@ -2115,6 +2133,8 @@ msgid ""
 "Set only if this employee needs a different structure than the company "
 "default; leave empty otherwise."
 msgstr ""
+"Задавайте лише якщо цьому працівнику потрібна інша структура, ніж типова для"
+" компанії; інакше залиште порожнім."
 
 #. module: payroll
 #: model:ir.model.fields.selection,name:payroll.selection__hr_payslip_change_state__state__draft

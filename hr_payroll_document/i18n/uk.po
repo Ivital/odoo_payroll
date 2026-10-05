@@ -146,3 +146,40 @@ msgstr "Кількість нарахувань зарплати"
 #: model_terms:ir.ui.view,arch_db:hr_payroll_document.payrolls_management_wizard_form
 msgid "Send"
 msgstr "Надіслати"
+
+#. module: hr_payroll_document
+#: model:ir.model.fields,help:hr_payroll_document.field_payroll_management_wizard__subject
+msgid ""
+"Enter the title of the payroll whether it is the month, week, day, etc."
+msgstr ""
+"Введіть назву розрахунку заробітної плати: місяць, тиждень, день тощо."
+
+#. module: hr_payroll_document
+#: model:ir.model.fields,help:hr_payroll_document.field_hr_employee__no_payroll_encryption
+#: model:ir.model.fields,help:hr_payroll_document.field_res_users__no_payroll_encryption
+msgid ""
+"If this is disabled (default), the PDF payrolls are encrypted using the Identification No.\n"
+"Only future payrolls are affected by this change, existing payrolls will not change their encryption status."
+msgstr ""
+"Якщо вимкнено (за замовчуванням), PDF-розрахункові листи шифруються за допомогою ідентифікаційного номера.\n"
+"Зміна впливає лише на майбутні розрахункові листи; стан шифрування існуючих не зміниться."
+
+#. module: hr_payroll_document
+#: model:mail.template,name:hr_payroll_document.payroll_employee_email_template
+msgid "Payroll Employee"
+msgstr "Працівник розрахунку зарплати"
+
+#. module: hr_payroll_document
+#: model:ir.model,name:hr_payroll_document.model_payroll_management_wizard
+msgid "Payroll Management"
+msgstr "Керування розрахунком зарплати"
+
+#. module: hr_payroll_document
+#: model:ir.model,name:hr_payroll_document.model_ir_attachment_payroll_custom
+msgid "Payroll attachment"
+msgstr "Вкладення до розрахунку зарплати"
+
+#. module: hr_payroll_document
+#: model:mail.template,subject:hr_payroll_document.payroll_employee_email_template
+msgid "Payroll {{ctx.get('subject')}}"
+msgstr "Розрахунок зарплати {{ctx.get('subject')}}"

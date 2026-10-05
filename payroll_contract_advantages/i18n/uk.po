@@ -102,3 +102,25 @@ msgstr "Останнє оновлення"
 #: model:ir.model.fields,field_description:payroll_contract_advantages.field_hr_contract_advantage__advantage_template_id
 msgid "Advantage Template"
 msgstr "Шаблон переваги"
+
+#. module: payroll_contract_advantages
+#: model:ir.model,name:payroll_contract_advantages.model_hr_contract_advantage_template
+msgid "Employee's Advantage on Contract"
+msgstr "Перевага працівника за договором"
+
+#. module: payroll_contract_advantages
+#: model:ir.model,name:payroll_contract_advantages.model_hr_contract_advantage
+msgid "Employee's Advantages on Contract"
+msgstr "Переваги працівника за договором"
+
+#. module: payroll_contract_advantages
+#: model:ir.model.fields,help:payroll_contract_advantages.field_hr_contract_advantage__advantage_lower_bound
+#: model:ir.model.fields,help:payroll_contract_advantages.field_hr_contract_advantage_template__lower_bound
+msgid "Lower bound authorized by the employer for this advantage"
+msgstr "Нижня межа, дозволена роботодавцем для цієї пільги"
+
+#. module: payroll_contract_advantages
+#: model:ir.model.fields,help:payroll_contract_advantages.field_hr_contract_advantage__advantage_upper_bound
+#: model:ir.model.fields,help:payroll_contract_advantages.field_hr_contract_advantage_template__upper_bound
+msgid "Upper bound authorized by the employer for this advantage"
+msgstr "Верхня межа, дозволена роботодавцем для цієї пільги"

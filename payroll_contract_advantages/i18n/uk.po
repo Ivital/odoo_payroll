@@ -97,3 +97,8 @@ msgstr "Останнє оновлення ким"
 #: model:ir.model.fields,field_description:payroll_contract_advantages.field_hr_contract_advantage_template__write_date
 msgid "Last Updated on"
 msgstr "Останнє оновлення"
+
+#. module: payroll_contract_advantages
+#: model:ir.model.fields,field_description:payroll_contract_advantages.field_hr_contract_advantage__advantage_template_id
+msgid "Advantage Template"
+msgstr "Шаблон переваги"

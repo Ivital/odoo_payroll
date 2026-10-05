@@ -1,0 +1,78 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-10-05 05:39+0000\n"
+"Last-Translator: Ivital <Ivital@users.noreply.github.com>\n"
+"Language-Team: Ukrainian\n"
+"Language: uk_UA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#. module: hr_payroll_document
+#: model:ir.model,name:hr_payroll_document.model_ir_attachment
+#: model:ir.model.fields,field_description:hr_payroll_document.field_ir_attachment__payrol_rel
+#: model:ir.model.fields,field_description:hr_payroll_document.field_product_document__payrol_rel
+msgid "Attachment"
+msgstr "Вкладення"
+
+#. module: hr_payroll_document
+#: model:ir.model.fields,field_description:hr_payroll_document.field_ir_attachment_payroll_custom__create_date
+msgid "Create Date"
+msgstr "Дата створення"
+
+#. module: hr_payroll_document
+#: model:ir.model.fields,field_description:hr_payroll_document.field_ir_attachment_payroll_custom__create_uid
+#: model:ir.model.fields,field_description:hr_payroll_document.field_payroll_management_wizard__create_uid
+msgid "Created by"
+msgstr "Створив"
+
+#. module: hr_payroll_document
+#: model:ir.model.fields,field_description:hr_payroll_document.field_payroll_management_wizard__create_date
+msgid "Created on"
+msgstr "Створено"
+
+#. module: hr_payroll_document
+#: model:ir.model.fields,field_description:hr_payroll_document.field_ir_attachment_payroll_custom__display_name
+#: model:ir.model.fields,field_description:hr_payroll_document.field_payroll_management_wizard__display_name
+msgid "Display Name"
+msgstr "Відображувана назва"
+
+#. module: hr_payroll_document
+#: model_terms:ir.ui.view,arch_db:hr_payroll_document.view_payroll_tree
+msgid "Download"
+msgstr "Завантажити"
+
+#. module: hr_payroll_document
+#: model:ir.model,name:hr_payroll_document.model_hr_employee
+#: model:ir.model.fields,field_description:hr_payroll_document.field_ir_attachment_payroll_custom__employee
+#: model_terms:ir.ui.view,arch_db:hr_payroll_document.view_payroll_filter
+msgid "Employee"
+msgstr "Працівник"
+
+#. module: hr_payroll_document
+#: model:ir.actions.act_window,name:hr_payroll_document.payrolls_view_action
+#: model:ir.model.fields,field_description:hr_payroll_document.field_payroll_management_wizard__payrolls
+#: model:ir.ui.menu,name:hr_payroll_document.payrolls_menu_action
+#: model_terms:ir.ui.view,arch_db:hr_payroll_document.hr_employee_view_tree_payroll
+#: model_terms:ir.ui.view,arch_db:hr_payroll_document.res_users_view_form_profile_inherit
+#: model_terms:ir.ui.view,arch_db:hr_payroll_document.view_payroll_filter
+msgid "Payrolls"
+msgstr "Нарахування зарплати"
+
+#. module: hr_payroll_document
+#: model:ir.actions.act_window,name:hr_payroll_document.payrolls_management_wizard_action
+#: model:ir.ui.menu,name:hr_payroll_document.payrolls_management_wizard_menu_action
+msgid "Payrolls Management"
+msgstr "Керування нарахуванням зарплати"
+
+#. module: hr_payroll_document
+#: model:ir.model.fields,field_description:hr_payroll_document.field_ir_attachment_payroll_custom__subject
+#: model:ir.model.fields,field_description:hr_payroll_document.field_payroll_management_wizard__subject
+#: model_terms:ir.ui.view,arch_db:hr_payroll_document.view_payroll_filter
+msgid "Subject"
+msgstr "Тема"

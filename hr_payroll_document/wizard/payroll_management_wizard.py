@@ -16,8 +16,22 @@ class PayrollManagamentWizard(models.TransientModel):
         required=True,
     )
     payrolls = fields.Many2many(
-        "ir.attachment", "payrol_rel", "doc_id", "attach_id3", copy=False, required=True
+        "ir.attachment",
+        "payrol_rel",
+        "doc_id",
+        "attach_id3",
+        copy=False,
+        required=True,
     )
+
+    def _employee_identifier_field(self):
+        Employee = self.env["hr.employee"]
+        if "l10n_ua_rnokpp" in Employee._fields:
+            return "l10n_ua_rnokpp"
+        return "identification_id"
+
+    def _employee_identifier(self, employee):
+        return employee[self._employee_identifier_field()]
 
     def send_payrolls(self):
         not_found = set()
@@ -25,16 +39,17 @@ class PayrollManagamentWizard(models.TransientModel):
         reader = PdfReader("/tmp/merged-pdf.pdf")
         employees = set()
 
-        # Validate if company have country
         if not self.env.company.country_id:
             raise UserError(self.env._("You must to filled country field of company"))
 
-        # Find all IDs of the employees
+        identifier_field = self._employee_identifier_field()
+
         for page in reader.pages:
             for value in page.extract_text().split():
                 if self.validate_id(value) and value != self.env.company.vat:
                     employee = self.env["hr.employee"].search(
-                        [("identification_id", "=", value)]
+                        [(identifier_field, "=", value)],
+                        limit=1,
                     )
                     if employee:
                         employees.add(employee)
@@ -42,25 +57,24 @@ class PayrollManagamentWizard(models.TransientModel):
                         not_found.add(value)
 
         for employee in list(employees):
+            identifier = self._employee_identifier(employee)
+            if not identifier:
+                continue
+
             pdfWriter = PdfWriter()
             for page in reader.pages:
-                if employee.identification_id in page.extract_text():
-                    # Save pdf with payrolls of employee
+                if identifier in page.extract_text():
                     pdfWriter.add_page(page)
 
             path = "/tmp/" + self.env._("Payroll ") + employee.name + ".pdf"
 
             if not employee.no_payroll_encryption:
-                # Encrypt the payroll file
-                # with the identification identifier of the employee
-                pdfWriter.encrypt(employee.identification_id, algorithm="AES-256")
+                pdfWriter.encrypt(identifier, algorithm="AES-256")
 
-            f = open(path, "wb")
-            pdfWriter.write(f)
-            f.close()
+            with open(path, "wb") as f:
+                pdfWriter.write(f)
 
-            # Send payroll to the employee
-            self.send_mail(employee, path)
+            self.send_mail(employee, path, identifier)
 
         action = self.env["ir.actions.actions"]._for_xml_id(
             "hr_payroll_document.payrolls_view_action"
@@ -68,6 +82,7 @@ class PayrollManagamentWizard(models.TransientModel):
         action["views"] = [
             [self.env.ref("hr_payroll_document.view_payroll_tree").id, "list"]
         ]
+
         if not_found:
             return {
                 "type": "ir.actions.client",
@@ -95,32 +110,26 @@ class PayrollManagamentWizard(models.TransientModel):
         }
 
     def merge_pdfs(self):
-        # Merge the pdfs together
         pdfs = []
         for file in self.payrolls:
-            b64 = file.datas
-            btes = b64decode(b64, validate=True)
+            btes = b64decode(file.datas, validate=True)
             if btes[0:4] != b"%PDF":
                 raise ValidationError(self.env._("Missing pdf file signature"))
-            f = open("/tmp/" + file.name, "wb")
-            f.write(btes)
-            f.close()
-            pdfs.append(f.name)
+            name = "/tmp/" + file.name
+            with open(name, "wb") as f:
+                f.write(btes)
+            pdfs.append(name)
 
         merger = PdfWriter()
-
         for pdf in pdfs:
             merger.append(pdf)
-
         merger.write("/tmp/merged-pdf.pdf")
         merger.close()
 
-    def send_mail(self, employee, path):
-        # Open Payrolls of employee and encode content
+    def send_mail(self, employee, path, identifier):
         with open(path, "rb") as pdf_file:
             encoded_string = base64.b64encode(pdf_file.read())
 
-        # Attach file to email
         ir_values = {
             "name": self.env._("Payroll")
             + "_"
@@ -136,27 +145,27 @@ class PayrollManagamentWizard(models.TransientModel):
             "document_type": "payroll",
         }
 
-        # Save payroll attachment to all employee payrolls attachments
         self.env["ir.attachment.payroll.custom"].create(
             {
                 "attachment_id": self.env["ir.attachment"].create(ir_values).id,
                 "employee": employee.name,
                 "subject": self.subject,
-                "identification_id": employee.identification_id,
+                "identification_id": identifier,
             }
         )
 
-        # Send mail
         mail_template = self.env.ref(
             "hr_payroll_document.payroll_employee_email_template"
         )
         data_id = [(6, 0, [self.env["ir.attachment"].create(ir_values).id])]
         mail_template.attachment_ids = data_id
-        mail_template.with_context(**{"subject": self.subject}).send_mail(
-            employee.id, force_send=True
+        mail_template.with_context(subject=self.subject).send_mail(
+            employee.id,
+            force_send=True,
         )
 
     def validate_id(self, number):
         return self.env["res.partner"].simple_vat_check(
-            self.env.company.country_id.code, number
+            self.env.company.country_id.code,
+            number,
         )

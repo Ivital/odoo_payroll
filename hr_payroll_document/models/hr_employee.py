@@ -14,9 +14,7 @@ class Employee(models.Model):
         groups="hr.group_hr_user",
     )
 
-    payroll_count = fields.Integer(
-        compute="_compute_payroll_count",
-    )
+    payroll_count = fields.Integer(compute="_compute_payroll_count")
 
     def _compute_payroll_count(self):
         self.payroll_count = len(
@@ -46,8 +44,13 @@ class Employee(models.Model):
 
     def write(self, vals):
         res = super().write(vals)
-        if "identification_id" in vals and not self.env["res.partner"].simple_vat_check(
-            self.env.company.country_id.code, vals["identification_id"]
+        if (
+            "l10n_ua_rnokpp" not in self._fields
+            and "identification_id" in vals
+            and not self.env["res.partner"].simple_vat_check(
+                self.env.company.country_id.code,
+                vals["identification_id"],
+            )
         ):
             raise ValidationError(
                 self.env._("The field identification ID is not valid")
